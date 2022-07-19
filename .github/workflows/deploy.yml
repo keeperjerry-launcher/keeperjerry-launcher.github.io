@@ -39,12 +39,16 @@ jobs:
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
-        with:
-          # deploy to gh-pages branch
-          target_branch: gh-pages
-          fqdn: launcher.keeperjerry.ru
-          # deploy the default output dir of VuePress
-          build_dir: docs/.vuepress/dist
+        #with:
+        #  # deploy to gh-pages branch
+        #  target_branch: gh-pages
+        #  fqdn: launcher.keeperjerry.ru
+        #  # deploy the default output dir of VuePress
+        #  build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: keeperjerry-launcher/keeperjerry-launcher.github.io
+          TARGET_BRANCH: gh-pages
+          BUILD_DIR: docs/.vuepress/dist
+          
