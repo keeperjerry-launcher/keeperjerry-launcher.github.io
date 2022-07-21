@@ -49,3 +49,7 @@ java.io.IOException: Cannot run program "/home/launcher/libraries/launch4j/bin/w
 ```bash
 chmod 755 /home/launcher/libraries/launch4j/bin/windres
 ```
+
+::: tip Нюансы на MacOS
+Если вы столкнулись с другой ошибкой, но с Launch4J - скорее всего, вы обладатель систем MacOS. Рекомендуем посетить Discord сервер для решения данной проблемы.
+:::
